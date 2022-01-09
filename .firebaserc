@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "college-cookbook-784cf": {
+      "hosting": {
+        "college-cookbook": [
+          "college-cookbook-784cf"
+        ]
+      }
+    }
+  }
+}
