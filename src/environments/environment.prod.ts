@@ -1,4 +1,15 @@
 export const environment = {
+  firebase: {
+    projectId: 'college-cookbook-784cf',
+    appId: '1:981767667549:web:8b46d283f1a61a420c32b4',
+    databaseURL: 'https://college-cookbook-784cf-default-rtdb.firebaseio.com',
+    storageBucket: 'college-cookbook-784cf.appspot.com',
+    locationId: 'us-central',
+    apiKey: 'AIzaSyAh_uEX6Ueia56Nvk5TGyHwRLPvsEGum8M',
+    authDomain: 'college-cookbook-784cf.firebaseapp.com',
+    messagingSenderId: '981767667549',
+    measurementId: 'G-1DB9LTR0CJ',
+  },
   production: true,
   firebaseConfig: {
     apiKey: "AIzaSyAh_uEX6Ueia56Nvk5TGyHwRLPvsEGum8M",

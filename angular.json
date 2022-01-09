@@ -125,7 +125,13 @@
         },
         "deploy": {
           "builder": "@angular/fire:deploy",
-          "options": {}
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "college-cookbook:build:production",
+            "firebaseProject": "college-cookbook-784cf",
+            "firebaseHostingSite": "college-cookbook-784cf"
+          }
         }
       }
     }

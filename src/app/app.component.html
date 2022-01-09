@@ -2,4 +2,9 @@
   <mat-icon>local_fire_department</mat-icon>
   <span>College Cookbook</span>
 </mat-toolbar>
+<ul>
+  <li *ngFor="let recipe of recipes">
+    {{recipe.title}}
+  </li>
+</ul>
 <router-outlet></router-outlet>

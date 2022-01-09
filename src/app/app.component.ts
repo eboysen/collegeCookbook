@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { AngularFirestore } from '@angular/fire/firestore';
+import { Firestore, collectionData, collection } from '@angular/fire/firestore';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -8,6 +9,19 @@ import { AngularFirestore } from '@angular/fire/firestore';
 })
 export class AppComponent {
   title = 'college-cookbook';
-  
-  constructor(private store:AngularFirestore){}
+  collect;
+  collecting;
+  recipes:any;
+  constructor(private store:Firestore){
+    this.collect = collection(store,'recipes');
+    this.collecting = collectionData(this.collect);
+    
+    this.collecting.subscribe((res)=>{
+      console.log(res);
+      this.recipes = res;
+    });
+  }
+
+  ngOnInit(){
+  }
 }
